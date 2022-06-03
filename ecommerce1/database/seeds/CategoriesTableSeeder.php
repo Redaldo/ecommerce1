@@ -13,6 +13,11 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-       
+       DB::table('categories')->insert([
+
+            'name' => 'men',
+            // 'parent_id' => '1'
+
+       ]);
     }
 }
